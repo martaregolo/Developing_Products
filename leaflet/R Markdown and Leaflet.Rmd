@@ -1,0 +1,22 @@
+---
+title: "R Markdown and Leaflet"
+date: "21/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Italy's Regions
+
+```{r,echo=FALSE, warning=FALSE, message=FALSE}
+library(geojsonio)
+library(leaflet)
+regions<-geojson_read("https://gist.githubusercontent.com/datajournalism-it/48e29e7c87dca7eb1d29/raw/2636aeef92ba0770a073424853f37690064eb0ea/regioni.geojson",what="sp")
+    
+leaflet()%>%
+       addTiles()%>%
+       addPolygons(data=regions,highlightOptions = highlightOptions(color = "white",weight = 2,bringToFront = TRUE),weight=0.5,opacity=1,color="green",fillOpacity = 0.5,label=regions@data$NOME_REG)
+
+```
