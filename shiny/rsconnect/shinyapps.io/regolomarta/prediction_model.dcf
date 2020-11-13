@@ -1,0 +1,10 @@
+name: prediction_model
+title:
+username:
+account: regolomarta
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3228967
+bundleId: 3857818
+url: https://regolomarta.shinyapps.io/prediction_model/
+when: 1605296274.33501
