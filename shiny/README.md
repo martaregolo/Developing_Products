@@ -10,3 +10,5 @@ You can go to: https://regolomarta.shinyapps.io/prediction_model/, choose what v
 * Year, the year (time)
 
 and choose at which value you want to evaluate the predicted number of people employed.
+
+Here a fancy presentation! https://rpubs.com/martaregolo/PitchPresentation
